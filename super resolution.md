@@ -12,5 +12,5 @@ author: Zheyuan Li, Yingqi Liu, Xiangyu Chen et al. Shenzhen Institutes of Advan
 
 ![image-20220602173802338](./screen/BSRN1.png)
 
-![image-20220602173852170](C:\Users\lin\Desktop\git\CIG_Paper_Reading\screen\BSRN2.png)
+![image-20220602173852170](./screen/BSRN2.png)
 
