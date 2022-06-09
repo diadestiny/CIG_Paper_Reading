@@ -24,3 +24,12 @@ authors: Christian Ledig, Lucas Theis, Ferenc Huszar, et al. Twitter
 > 3. 结合GAN的训练方式(**条件GAN**)和**感知损失**使超分修复图像更符合人眼感知(MOS主观评估手段)，而PSNR/SSIM越高，人眼感知效果可能下降。
 
 ![image-20220609145620641](./screen/SRGAN.png)
+
+**3. (PULSE)Pulse: Self-supervised Photo Upsampling via Latent Space Exploration of Generative Models** [paper](https://arxiv.org/pdf/2003.03808) | [code](https://github.com/adamian98/pulse) *CVPR2020*
+
+author: Sachit Menon, Alexandru Damian, Shijia Hu, et al. Duke University
+
+> 1. 提出了超分算法的新范式：结合预训练好的StyleGAN，以完全**无监督**实现，不需要成对的LR-HR图像进行训练。
+> 2. 不同于以往超分学习LR到HR的映射思路(SRCNN或者SRGAN)，本文采用GAN Inversion反演思路，首先生成器G用高斯分布约束初始化latent code, 结合StyleGAN来生成目标HR图像，降采样后和原始的LR图像在判别器D通过downscaling loss来**优化latent code**，以此来生成更好的HR图像。
+
+![img](./screen/PULSE)
